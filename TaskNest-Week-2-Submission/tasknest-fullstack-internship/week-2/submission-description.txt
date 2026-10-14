@@ -1,0 +1,9 @@
+This Week 2 submission implements the front end of TaskNest for the YuvaIntern Junior Full Stack Developer internship. TaskNest is a personal project and task workspace based on the planning and architecture completed in Week 1. The application uses React, HTML, CSS, and JavaScript, with Vite providing the local development server and production build.
+
+The interface includes three connected views: a public landing page, a dashboard, and a project detail workspace. Users can create, rename, and delete projects, as well as add, edit, complete, reopen, and delete tasks. The dashboard displays open, completed, and overdue task counts. Each project shows its completion progress. Search, status filters, priority filters, and pagination help users find relevant tasks, with filter and page state reflected in the URL.
+
+Reusable components organize the interface into summaries, project cards, task rows, editors, and confirmation dialogs. Forms provide visible labels, validation feedback, pending states, and recovery from failed saves. Responsive CSS adapts the desktop sidebar, card grids, task controls, and dialogs to tablet and phone widths. Keyboard support includes a skip link, visible focus indicators, Escape dismissal, and dialog focus restoration.
+
+An asynchronous demo service saves records in browser storage so the front end can be used independently. A separate API adapter follows the planned backend contract for later integration. This submission clearly distinguishes the working frontend demo from production authentication and database services, which are not deployed in Week 2.
+
+The source package includes a README with local setup instructions, implementation wireframes, tests, screenshots, and the report. Validation covers model and service logic, browser interaction workflows, persistence, error recovery, and responsive layouts.
