@@ -1,0 +1,22 @@
+{
+  "verifiedDate": "2026-10-22",
+  "node": "v24.18.1",
+  "platform": "macOS",
+  "browser": "Helium Chromium 155.0.8059.84",
+  "automatedTests": 38,
+  "browserWorkflowGroups": 13,
+  "projectViewportWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "video": {
+    "file": "TaskNest-Week-4-Demo.webm",
+    "seconds": 30.92,
+    "width": 1280,
+    "height": 800,
+    "audio": false
+  }
+}

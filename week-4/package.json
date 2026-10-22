@@ -1,0 +1,31 @@
+{
+  "name": "tasknest-week-4-integrated",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env scripts/dev.mjs",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/src/server.js",
+    "test": "node --test --test-concurrency=1 server/tests/*.test.js client/tests/*.test.js tests/*.test.js",
+    "test:browser": "node scripts/browser-check.mjs",
+    "demo": "node scripts/record-demo.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.10",
+    "@node-rs/argon2": "2.2.2",
+    "express": "5.3.0",
+    "express-rate-limit": "8.7.1",
+    "helmet": "8.3.0",
+    "pg": "8.23.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.4",
+    "playwright": "1.64.1"
+  }
+}

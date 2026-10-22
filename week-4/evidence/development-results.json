@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-22",
+  "webOrigin": "http://127.0.0.1:8035",
+  "internalBackend": "http://127.0.0.1:8036",
+  "checks": [
+    "Vite serves React UI",
+    "Proxy preserves browser Origin",
+    "Registration sets and rotates same-origin cookie/CSRF",
+    "Authenticated project create succeeds through proxy"
+  ],
+  "pageErrors": []
+}

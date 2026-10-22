@@ -1,0 +1,12 @@
+{
+  "verifiedDate": "2026-10-22",
+  "checks": [
+    "Extracted source ZIP without installed or generated files",
+    "npm ci succeeded using included lockfile",
+    "npm run build succeeded",
+    "Built app started from the extracted source",
+    "HTML and real database health returned HTTP 200",
+    "Fresh account, project creation and dashboard SQL summary succeeded"
+  ],
+  "node": "v26.9.0"
+}

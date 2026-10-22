@@ -1,0 +1,9 @@
+For Week 4 of the Junior Full Stack Developer Intern internship, I integrated the TaskNest React frontend from Week 2 with the Express and PostgreSQL backend developed in Week 3. The completed application now uses real account authentication and database persistence instead of browser-local sample data.
+
+I added registration, sign-in, sign-out, protected workspace screens, and session restoration. The frontend communicates asynchronously with the same-origin API, preserves the browser-managed session cookie, and keeps the rotating CSRF token in memory. Project and task operations now create, read, update, and delete database records. The dashboard displays server-backed totals, while the existing search, status and priority filters, pagination, and responsive design remain available.
+
+During integration, I addressed strict request-field validation, token rotation after login, overlapping mutations, and stale responses after sign-out. Failed writes preserve form drafts. When a write succeeds but the subsequent refresh fails, the interface clearly explains that the change was saved and offers a retry. Authentication expiration removes private workspace data rather than leaving an outdated screen visible.
+
+Verification includes 38 automated tests, 13 browser workflow groups, and five responsive project widths. The browser checks exercise actual accounts and database records, confirm isolation between two users, and verify persistence after a real database and server restart. I also checked registration and project saving through the Vite development proxy.
+
+The submission contains both frontend and backend source, a dependency lockfile, updated setup and integration documentation, test evidence, a Word report, and a compressed source archive. A 31-second screen recording demonstrates the working application with synthetic account data. The project is prepared and tested locally; no online deployment or portal submission is claimed.

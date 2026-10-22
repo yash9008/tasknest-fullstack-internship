@@ -1,0 +1,480 @@
+{
+  "date": "2026-10-22",
+  "browser": "155.0.8059.84",
+  "groups": [
+    "Protected route, registration validation, real registration and empty account",
+    "Session cookie is HttpOnly; no credentials or workspace data in localStorage",
+    "Real project create/edit and task creation; required fields; five-task pagination",
+    "Combined filters, complete/reopen, strict PATCH allow-list and task editing",
+    "Cookie/session restoration after refresh and real database/server close/reopen",
+    "Project layout at five desktop/tablet/phone widths without horizontal overflow",
+    "Interrupted save preserves draft; committed-save/failed-refresh feedback and Retry",
+    "Rate-limit response presents a recovery message",
+    "Separate real account cannot see another account’s projects or tasks",
+    "Cancelled/confirmed task deletion, sign-out, invalid credentials and successful sign-in",
+    "Confirmed project deletion cascades to its stored tasks",
+    "Stale read after sign-out is ignored; expired real session removes private workspace",
+    "Duplicate-email server error is shown without losing form values"
+  ],
+  "widths": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "pageErrors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/register",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/projects",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/tasks/28304ac2-d404-44c0-8592-b621ed7266bc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/tasks/28304ac2-d404-44c0-8592-b621ed7266bc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/tasks/28304ac2-d404-44c0-8592-b621ed7266bc",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/tasks/28304ac2-d404-44c0-8592-b621ed7266bc",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/logout",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "status": 401
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261/tasks",
+      "status": 200
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/projects/72c9f9f8-b8f6-4967-a125-5d8177da1261",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/logout",
+      "status": 204
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 401
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/login",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/dashboard",
+      "status": 401
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/session",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/auth/register",
+      "status": 409
+    }
+  ],
+  "notes": "Normal workflows use the real Express/PGlite backend. Explicit connection/read/rate-limit failure branches intercept selected requests. The QA server uses a temporary disk database and higher request limits."
+}

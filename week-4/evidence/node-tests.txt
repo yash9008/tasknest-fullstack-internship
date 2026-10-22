@@ -1,0 +1,50 @@
+
+> tasknest-week-4-integrated@1.0.0 test
+> node --test --test-concurrency=1 server/tests/*.test.js client/tests/*.test.js tests/*.test.js
+
+✔ summary treats earlier unfinished dates as overdue and excludes completed tasks (0.489917ms)
+✔ search status and priority filters combine (0.077208ms)
+✔ pagination clamps invalid and out-of-range pages without losing items (0.069833ms)
+✔ validation rejects blank names, invalid enums and impossible calendar dates (0.722291ms)
+✔ health uses real SQL and protective headers (765.013709ms)
+✔ anonymous bootstrap sets HttpOnly SameSite cookie and CSRF token (4.075667ms)
+✔ login rotates session and CSRF while passwords and tokens are hashed at rest (15.276417ms)
+✔ duplicate normalized email returns 409 without duplicating account (18.863459ms)
+✔ wrong password and unknown account have the same generic 401 (26.565458ms)
+✔ anonymous and missing sessions cannot access private endpoints (3.030292ms)
+✔ mutation rejects missing CSRF and a foreign or missing Origin (3.367167ms)
+✔ registration validates required fields, email, lengths and unknown keys (12.860708ms)
+✔ project CRUD trims input and preserves unspecified fields (7.987084ms)
+✔ task CRUD supports defaults, updates and clearing the due date (8.942ms)
+✔ all project and task operations independently enforce ownership (16.150209ms)
+✔ search, status and priority filters combine with accurate totals (7.902583ms)
+✔ pagination is stable, disjoint and retains totals on empty pages (9.368667ms)
+✔ invalid UUIDs, pagination, repeated parameters and filter values return 400 (7.20075ms)
+✔ field whitelists reject mass assignment, oversized strings and impossible dates (11.117542ms)
+✔ SQL metacharacters and wildcard characters remain literal data (9.544666ms)
+✔ dashboard isolates owners and excludes completed tasks from overdue (8.654459ms)
+✔ project deletion cascades tasks atomically (3.896625ms)
+✔ failed transactions roll back and foreign keys reject orphan tasks (1.068167ms)
+✔ malformed JSON, oversized requests and wrong media types return JSON errors (2.227584ms)
+✔ expired sessions lose access and bootstrap cleans expired records (19.268333ms)
+✔ logout invalidates saved tokens and clears cookie (20.402125ms)
+✔ production requires HTTPS and Secure cookies (5.008917ms)
+✔ IP rate limiting returns 429 and Retry-After (7.064875ms)
+✔ unexpected errors and logs do not expose SQL or credentials (2.000709ms)
+✔ file-backed PostgreSQL preserves account, session and task across restart (1859.164ms)
+✔ authentication has an additional account-based throttle (34.595625ms)
+✔ anonymous session creation is independently throttled (10.9985ms)
+✔ concurrent partial updates preserve both changed fields (7.711667ms)
+✔ missing resources and unknown routes return the standard 404 envelope (3.878542ms)
+✔ actual frontend transport integrates auth, summary, CRUD, logout/login and ownership (1798.678833ms)
+✔ transport restores a cookie session and reports expiration without replaying mutation (535.774ms)
+✔ transport deduplicates concurrent session bootstrap and collects all API pages (8.742541ms)
+✔ network, timeout, unreadable and rate-limit responses produce actionable errors (6.473917ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5724.290333
